@@ -1,5 +1,5 @@
 import requests
-# import subprocess
+import os
 from bs4 import BeautifulSoup
 
 # Define headers
@@ -56,11 +56,17 @@ def login_to_medi_cal():
         
         if 'Subscriber ID' in response_next_page.text:
             print('Navigated to SSR Form')
-            submit_ssr()
+            if is_empty("ssr.txt"):
+                print("'ssr.txt' is empty.")
+            else:
+                submit_ssr()
         
         # print(response_next_page.text)
     else:
         print('Login failed!')
+        
+def is_empty(filename):
+    return os.path.getsize(filename) == 0
         
 def get_next_entry(file):
     """
