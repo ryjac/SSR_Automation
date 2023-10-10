@@ -1,4 +1,0 @@
-Subscriber ID
-DOB (MM/DD/YYYY)
-Issue Date (MM/DD/YYYY)
-Service Date (MM/DD/YYYY)
