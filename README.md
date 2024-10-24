@@ -7,7 +7,7 @@ Python script that automates the task of individually running Medi-Cal Single Su
     Requests
     BeautifulSoup
     Openpyxl
-    Dotenv
+    Python-Dotenv
 
 - pip install requests bs4 openpyxl python-dotenv
 
